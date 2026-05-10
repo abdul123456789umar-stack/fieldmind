@@ -1,0 +1,17 @@
+{
+  "name": "FieldMind – AI Clinical Notes",
+  "short_name": "FieldMind",
+  "description": "AI-powered voice clinical notes for community health workers. Powered by Gemma 4.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F0F4F8",
+  "theme_color": "#0B6E6E",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230B6E6E'/><text y='.9em' font-size='80' x='10'>🏥</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
