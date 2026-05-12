@@ -203,7 +203,7 @@ const BARS = Array.from({length:36},(_,i)=>({h:15+Math.random()*75,d:(i*0.055).t
 const LS_NOTES='fieldmind_notes',LS_KEY='fieldmind_apikey',LS_MODEL='fieldmind_model'
 
 export default function App() {
-  const [apiKey,setApiKey]=useState(()=>localStorage.getItem(LS_KEY)||'')
+  const [apiKey,setApiKey]=useState(()=>localStorage.getItem(LS_KEY)||import.meta.env.VITE_API_KEY||'')
   const [model,setModel]=useState(()=>localStorage.getItem(LS_MODEL)||'gemma-3-27b-it')
   const [notes,setNotes]=useState(()=>{try{return JSON.parse(localStorage.getItem(LS_NOTES)||'[]')}catch{return[]}})
   const [screen,setScreen]=useState('home')
