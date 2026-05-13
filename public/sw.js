@@ -1,4 +1,4 @@
-const CACHE = 'fieldmind-v1'
+const CACHE = 'fieldmind-v2'
 const SHELL = ['/', '/index.html']
 
 self.addEventListener('install', e => {
@@ -15,6 +15,12 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
   if (e.request.url.includes('generativelanguage.googleapis.com')) return
+  if (e.request.mode === 'navigate') {
+    e.respondWith(
+      fetch(e.request).catch(() => caches.match(e.request))
+    )
+    return
+  }
   e.respondWith(
     caches.match(e.request).then(cached => cached || fetch(e.request))
   )
