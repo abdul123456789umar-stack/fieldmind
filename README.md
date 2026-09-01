@@ -66,3 +66,8 @@ This application can be deployed to platforms like Vercel. Ensure the `VITE_API_
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
+
+## Ownership
+
+- **Owner:** Abdulkadir umar
+- **Hugging Face:** [MR-CODESPIKE](https://huggingface.co/MR-CODESPIKE)
